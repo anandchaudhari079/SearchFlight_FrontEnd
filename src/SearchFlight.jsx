@@ -124,7 +124,7 @@ function SearchFlight() {
       <h2 className="font-bold text-blue-500 mb-6 text-center"> ✈️ Search Flight</h2>  
       <div className="flex space-x-6 mb-4">
         <div >
-          <label className="flex items-center space-x-2 me-3">
+          <label className="flex items-center space-x-2 me-3 ">
             <input type="radio" name="choice"  value="oneway"
               checked={tripMode === "oneway"}
               onChange={(e) => setTripMode(e.target.value)}
