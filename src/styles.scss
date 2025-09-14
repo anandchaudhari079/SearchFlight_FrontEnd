@@ -1,0 +1,97 @@
+$primary-color: black;
+$background-color: lightcyan;
+$text-color: #222;
+
+body {
+  background: rgb(176, 190, 150);
+  color: $text-color;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  width: 80vw;
+  height: 80vh;
+  min-height: 80vh;
+  min-width: 80vw;
+}
+
+.container-main {
+  background: $background-color;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 1px;
+  margin-top: 1px;
+  margin-right: 1px;
+  margin-left: 1px;
+  width: 99vw;
+  height: 95vh;
+  min-height: 95vh;
+  min-width: 98vw;
+}
+
+.container-sub {
+  background: $background-color;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-main {
+  background: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  transition: background 0.2s;
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+
+.header-main { 
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: $primary-color;
+}
+
+.header-sub { 
+  text-align: center;
+  font-size: 1.5rem;
+  color: $primary-color;  
+}
+
+.input-main {
+  border: 1px solid #b3d8ff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: #f7fbff;
+  color: $text-color;
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-main {
+    padding: 0.2rem;
+    margin-top: 0.1rem;
+    border-radius: 0.4rem;
+  }
+  .header-main {
+    font-size: 1rem;
+  }
+  .header-sub {
+    font-size: 0.9rem;
+  }
+  .btn-main {
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+}
