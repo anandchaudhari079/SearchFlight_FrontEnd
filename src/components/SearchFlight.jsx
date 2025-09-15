@@ -9,13 +9,7 @@ import FareTypeSelector from "./FareTypeSelector";
 
 function SearchFlight() {
   const [tripMode, setTripMode] = useState("oneway");
-  const [departureAirports, setDepartureAirports] = useState([
-    "Banglore",
-    "Chennai",
-    "Delhi",
-    "Kolkata",
-    "Mumbai",
-  ]);
+  const [departureAirports, setDepartureAirports] = useState([]);
   const [arrivalAirports, setArrivalAirports] = useState([]);
   const [origin, setOrigin] = useState("Mumbai");
   const [destination, setDestination] = useState("");
